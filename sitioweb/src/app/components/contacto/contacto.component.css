@@ -1,0 +1,14 @@
+#home-section{
+  background-color: #FFD500;
+
+
+}
+#titulo{
+
+  width: 100%;
+  min-height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: aliceblue;
+}

@@ -1,0 +1,44 @@
+<div class="container-fluid colorBody1">
+  <nav class="navbar navbar-expand-lg navbar-light colorNavbar2 mt-1">
+    <a class="navbar-brand ml-3 colorName4 ">
+      <img src="#" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+      <strong class="text-uppercase federica6">Aventuras</strong>
+    </a>
+    <button class="navbar-toggler colorBody1 mr-3" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container text-justify ml-5 mr-5">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item " routerLinkActive="active">
+            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/inicio']">Inicio</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/noticias']">Noticias</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/aprender-haciendo']">Aprender</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/desafios']">Desafios</a>
+       </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/personajes']">Personajes</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/contacto']">Contacto</a>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col text-center">
+            <p class="mr-2">
+              <button class="btn btn-outline-warning my-2" type="button">Ingresa</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
