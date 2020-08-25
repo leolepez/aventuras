@@ -3,7 +3,11 @@
 
 }
 #titulo{
-  
+
+}
+
+.contenido img{
+  max-width: 600px!important;
 }
 
 

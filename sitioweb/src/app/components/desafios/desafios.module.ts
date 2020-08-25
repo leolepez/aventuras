@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { DesafiosRoutingModule } from './desafios-routing.module';
 import { DesafiosComponent } from './desafios.component';
 
-
 @NgModule({
   declarations: [DesafiosComponent],
   imports: [

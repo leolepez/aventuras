@@ -1,13 +1,41 @@
 
-
-
-
-
 #home-section{
   background-color: #FC5085;
 
 
 }
 #titulo{
-
+  color: white;
 }
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+#inicio-contenido{
+  color: white;
+}
+#ultimasnoticias{
+  background-color: #39C123;
+  color: white;
+}
+
+  #home-contacto{
+    background-color: #FFD500;
+  }
+
+  /* Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }

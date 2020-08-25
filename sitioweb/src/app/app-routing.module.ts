@@ -29,6 +29,7 @@ const routes: Routes = [
     path: 'contacto', loadChildren: () =>
     import ('./components/contacto/contacto.module' ).then(m => m.ContactoModule)
   },
+
   { path: '', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

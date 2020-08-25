@@ -1,32 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { WpService } from '../../@service/wp.service';
+import { Observable } from 'rxjs';
+import { WpI } from '../../@service/wp.interfaces';
 
-declare let clave: any;
 
 @Component({
   selector: 'app-desafios',
   templateUrl: './desafios.component.html',
   styleUrls: ['./desafios.component.css'],
-  providers: [WpService]
+  providers: [WpService ]
 })
 export class DesafiosComponent implements OnInit {
 
-  public postList = new Array();
+  
+  constructor(private dataWp: WpService ) { }
 
-  constructor(private wp: WpService) { }
+  posts$: Observable<WpI[]>;
 
+  
   // tslint:disable-next-line: typedef
   ngOnInit() {
-    this.wp.getPosts().subscribe (
-      data => {
-        for ( clave in data){
-          if (data) {
-            this.postList.push(result[clave]);
-          }
-          console.log(this.postList);
-        }
-      }
-    );
+
+    this.posts$ = this.dataWp.getPosts();
+    
+
   }
 }
