@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-12 04:17:55+0000\n"
+"PO-Revision-Date: 2020-08-21 00:21:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -351,7 +351,7 @@ msgstr "No tenés permisos para gestionar plugins de la red."
 
 #. translators: 1. The REST API route being registered. 2. The argument name.
 #. 3. The suggested function name.
-#: wp-includes/rest-api.php:97
+#: wp-includes/rest-api.php:98
 msgid "The REST API route definition for %1$s is missing the required %2$s argument. For REST API routes that are intended to be public, use %3$s as the permission callback."
 msgstr "A la definición de ruta de la API REST para %1$s le falta el argumento %2$s necesario. Para las rutas de la API REST que están pensadas para ser públicas, usá %3$s como la llamada de permiso."
 
@@ -568,77 +568,77 @@ msgid "File URL:"
 msgstr "URL del archivo:"
 
 #. translators: %s is the name of a JSON field expecting a valid uuid.
-#: wp-includes/rest-api.php:1768
+#: wp-includes/rest-api.php:1769
 msgid "%s is not a valid UUID."
 msgstr "%s no es un campo UUID válido."
 
-#: wp-includes/rest-api.php:1744
+#: wp-includes/rest-api.php:1745
 msgid "Invalid hex color."
 msgstr "Color hexadecimal no válido."
 
 #. translators: 1: Parameter, 2: Pattern.
-#: wp-includes/rest-api.php:1731
+#: wp-includes/rest-api.php:1732
 msgid "%1$s does not match pattern %2$s."
 msgstr "%1$s no coincide con el patrón %2$s."
 
 #. translators: 1: Parameter, 2: Number of characters.
-#: wp-includes/rest-api.php:1720
+#: wp-includes/rest-api.php:1721
 msgid "%1$s must be at most %2$s character long."
 msgid_plural "%1$s must be at most %2$s characters long."
 msgstr[0] "%1$s debe tener como máximo %2$s carácter de longitud."
 msgstr[1] "%1$s debe tener como máximo %2$s caracteres de longitud."
 
 #. translators: 1: Parameter, 2: Number of characters.
-#: wp-includes/rest-api.php:1708
+#: wp-includes/rest-api.php:1709
 msgid "%1$s must be at least %2$s character long."
 msgid_plural "%1$s must be at least %2$s characters long."
 msgstr[0] "%1$s debe tener al menos %2$s carácter de longitud."
 msgstr[1] "%1$s debe tener al menos %2$s caracteres de longitud."
 
 #. translators: 1: Property of an object, 2: Parameter.
-#: wp-includes/rest-api.php:1632 wp-includes/rest-api.php:1639
+#: wp-includes/rest-api.php:1633 wp-includes/rest-api.php:1640
 msgid "%1$s is a required property of %2$s."
 msgstr "%1$s es una propiedad necesaria de %2$s."
 
 #. translators: 1: Parameter
-#: wp-includes/rest-api.php:1616 wp-includes/rest-api.php:1868
+#: wp-includes/rest-api.php:1617 wp-includes/rest-api.php:1869
 msgid "%1$s has duplicate items."
 msgstr "%1$s tiene elementos duplicados."
 
 #. translators: 1: Parameter, 2: Number.
-#: wp-includes/rest-api.php:1611
+#: wp-includes/rest-api.php:1612
 msgid "%1$s must contain at most %2$s items."
 msgstr "%1$s debe contener como máximo %2$s elementos."
 
 #. translators: 1: Parameter, 2: Number.
-#: wp-includes/rest-api.php:1606
+#: wp-includes/rest-api.php:1607
 msgid "%1$s must contain at least %2$s items."
 msgstr "%1$s debe contener al menos %2$s elementos."
 
 #. translators: 1. Parameter 2. The list of allowed types.
 #. translators: 1. Parameter. 2. The list of allowed types.
-#: wp-includes/rest-api.php:1582 wp-includes/rest-api.php:1852
+#: wp-includes/rest-api.php:1583 wp-includes/rest-api.php:1853
 msgid "The \"type\" schema keyword for %1$s can only be one of the built-in types: %2$l."
 msgstr "La palabra clave \"type\" de schema para %1$s solo puede ser uno de los tipos integrados: %2$l."
 
 #. translators: 1. Parameter
-#: wp-includes/rest-api.php:1564 wp-includes/rest-api.php:1835
+#: wp-includes/rest-api.php:1565 wp-includes/rest-api.php:1836
 msgid "The \"type\" schema keyword for %s is required."
 msgstr "Se requiere la palabra clave de esquema \"type\" para %s."
 
-#: wp-includes/rest-api.php:1527
+#: wp-includes/rest-api.php:1528
 msgid "Cannot stabilize objects. Convert the object to an array first."
 msgstr "No se pueden estabilizar los objetos. Primero convertí el objeto a un array."
 
 #. translators: 1. Parameter. 2. List of allowed types.
-#: wp-includes/rest-api.php:1465
+#: wp-includes/rest-api.php:1466
 msgid "The \"type\" schema keyword for %1$s can only contain the built-in types: %2$l."
 msgstr "La palabra clave de esquema \"type\" para %1$s solo puede contener los tipos integrados: %2$l."
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message.
 #. translators: 1: Theme name. 2: Theme slug.
-#: wp-includes/rest-api.php:636 wp-admin/includes/class-wp-debug-data.php:1055
+#: wp-includes/rest-api.php:637 wp-admin/includes/class-wp-debug-data.php:1055
 #: wp-admin/includes/class-wp-debug-data.php:1074
 #: wp-admin/includes/class-wp-debug-data.php:1171
 #: wp-admin/includes/class-wp-debug-data.php:1336
@@ -1281,7 +1281,7 @@ msgstr "Comprobá tu correo electrónico para el enlace de confirmación y, desp
 msgid "Password protected"
 msgstr "Protegida con contraseña"
 
-#: wp-includes/rest-api.php:50
+#: wp-includes/rest-api.php:51
 msgid "Namespace must not start or end with a slash."
 msgstr "El namespace no debe empezar o terminar con una barra inclinada."
 
@@ -2286,7 +2286,7 @@ msgid "Could not retrieve site data."
 msgstr "No se pudieron recuperar los datos del sitio."
 
 #. translators: %s: rest_api_init
-#: wp-includes/rest-api.php:58
+#: wp-includes/rest-api.php:59
 msgid "REST API routes must be registered on the %s action."
 msgstr "Las rutas de la API REST deben registrarse en la acción %s."
 
@@ -3082,7 +3082,7 @@ msgstr "Confirmada la acción del usuario."
 
 #: wp-includes/user.php:3868
 msgid "This link has expired."
-msgstr "Este enlace ha caducado."
+msgstr "Este enlace ya expiró."
 
 #: wp-includes/user.php:3864 wp-admin/includes/privacy-tools.php:23
 #: wp-admin/includes/privacy-tools.php:52
@@ -3136,7 +3136,7 @@ msgstr "La acción se ha confirmado."
 
 #: wp-includes/user.php:3906
 msgid "The confirmation email has expired."
-msgstr "El correo de confirmación ha caducado."
+msgstr "El correo de confirmación ya expiró."
 
 #: wp-includes/user.php:3888 wp-admin/includes/privacy-tools.php:107
 #: wp-admin/includes/privacy-tools.php:119
@@ -3255,7 +3255,7 @@ msgstr "Si el tipo de entrada es visible o no."
 
 #: wp-includes/functions.php:3258
 msgid "The link you followed has expired."
-msgstr "El enlace que has seguido ha caducado."
+msgstr "El enlace que seguiste ya expiró."
 
 #: wp-includes/script-loader.php:1111
 #: wp-includes/class-wp-customize-manager.php:514 wp-admin/edit-tags.php:28
@@ -3283,7 +3283,7 @@ msgstr "Necesitas un nivel más alto de permisos."
 #: wp-admin/media-upload.php:38 wp-admin/js/tags.js:62
 #: wp-admin/js/updates.js:1784 wp-admin/network/site-users.php:163
 msgid "Something went wrong."
-msgstr "Algo fue mal."
+msgstr "Algo salió mal."
 
 #. translators: %s: User who is customizing the changeset in customizer.
 #: wp-includes/class-wp-customize-manager.php:4105
@@ -3319,7 +3319,7 @@ msgid "Installed"
 msgstr "Instalado"
 
 #. translators: %s: Property of an object.
-#: wp-includes/rest-api.php:1653
+#: wp-includes/rest-api.php:1654
 msgid "%1$s is not a valid property of Object."
 msgstr "%1$s no es una propiedad válida del objeto."
 
@@ -4624,22 +4624,22 @@ msgid "Displays an audio player."
 msgstr "Muestra un reproductor de audio."
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:1789
+#: wp-includes/rest-api.php:1790
 msgid "%1$s must be less than or equal to %2$d"
 msgstr "%1$s debe ser menor o igual a %2$d"
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:1786
+#: wp-includes/rest-api.php:1787
 msgid "%1$s must be less than %2$d"
 msgstr "%1$s debe ser menor que %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:1781
+#: wp-includes/rest-api.php:1782
 msgid "%1$s must be greater than or equal to %2$d"
 msgstr "%1$s debe ser mayor o igual a %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:1778
+#: wp-includes/rest-api.php:1779
 msgid "%1$s must be greater than %2$d"
 msgstr "%1$s debe ser mayor que %2$d"
 
@@ -5077,7 +5077,7 @@ msgid "Invalid slug."
 msgstr "Slug no válido."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:717
-#: wp-includes/rest-api.php:1756 wp-includes/user.php:3585
+#: wp-includes/rest-api.php:1757 wp-includes/user.php:3585
 #: wp-admin/network/site-new.php:96
 msgid "Invalid email address."
 msgstr "Dirección de correo electrónico no valida."
@@ -5095,7 +5095,7 @@ msgstr "Llamada no válida a JSONP."
 msgid "Invalid page template."
 msgstr "Plantilla de página no válida."
 
-#: wp-includes/script-loader.php:1153 wp-includes/rest-api.php:1750
+#: wp-includes/script-loader.php:1153 wp-includes/rest-api.php:1751
 #: wp-includes/post.php:3793 wp-admin/includes/post.php:188
 msgid "Invalid date."
 msgstr "Fecha no válida."
@@ -5548,42 +5548,42 @@ msgid "Item selected."
 msgstr "Elemento seleccionado."
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1810
+#: wp-includes/rest-api.php:1811
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s debe estar entre %2$d (incluido) y %3$d (incluido)"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1805
+#: wp-includes/rest-api.php:1806
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s debe estar entre %2$d (excluido) y %3$d (incluido)"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1800
+#: wp-includes/rest-api.php:1801
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s debe estar entre %2$d (incluido) y %3$d (excluido)"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1795
+#: wp-includes/rest-api.php:1796
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s debe estar entre %2$d (excluido) y %3$d (excluido)"
 
 #. translators: %s: IP address.
-#: wp-includes/rest-api.php:1762
+#: wp-includes/rest-api.php:1763
 msgid "%s is not a valid IP address."
 msgstr "%s no es una dirección de IP válida."
 
 #. translators: 1: Parameter, 2: List of types.
 #. translators: 1: Parameter, 2: Type name.
-#: wp-includes/rest-api.php:1572 wp-includes/rest-api.php:1590
-#: wp-includes/rest-api.php:1623 wp-includes/rest-api.php:1669
-#: wp-includes/rest-api.php:1684 wp-includes/rest-api.php:1689
-#: wp-includes/rest-api.php:1694 wp-includes/rest-api.php:1700
+#: wp-includes/rest-api.php:1573 wp-includes/rest-api.php:1591
+#: wp-includes/rest-api.php:1624 wp-includes/rest-api.php:1670
+#: wp-includes/rest-api.php:1685 wp-includes/rest-api.php:1690
+#: wp-includes/rest-api.php:1695 wp-includes/rest-api.php:1701
 msgid "%1$s is not of type %2$s."
 msgstr "%1$s no es del tipo %2$s."
 
 #. translators: 1: Parameter, 2: List of valid values.
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1363
-#: wp-includes/rest-api.php:1678
+#: wp-includes/rest-api.php:1679
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s no es ninguna de las siguientes %2$s."
 
@@ -7062,11 +7062,11 @@ msgstr "No está permitido anular una taxonomía incorporada."
 msgid "(Untitled)"
 msgstr "(Sin título)"
 
-#: wp-includes/rest-api.php:43
+#: wp-includes/rest-api.php:44
 msgid "Route must be specified."
 msgstr "Debe especificarse la ruta."
 
-#: wp-includes/rest-api.php:40
+#: wp-includes/rest-api.php:41
 msgid "Routes must be namespaced with plugin or theme name and version."
 msgstr "Las rutas deben tener espacio de nombres con el nombre y versión del plugin o tema."
 
@@ -7550,7 +7550,7 @@ msgstr "Nombre de shortcode no válido: %1$s. No utilices espacios o caracteres 
 msgid "Invalid shortcode name: Empty name given."
 msgstr "Nombre de shortcode no válido: Has dado un nombre vacío."
 
-#: wp-includes/rest-api.php:999
+#: wp-includes/rest-api.php:1000
 msgid "Cookie nonce is invalid"
 msgstr "La cookie nonce no es válida"
 
@@ -7558,18 +7558,18 @@ msgstr "La cookie nonce no es válida"
 #. message.
 #. translators: Developer debugging message. 1: PHP function name, 2: WordPress
 #. version number, 3: Explanatory message.
-#: wp-includes/rest-api.php:607 wp-includes/rest-api.php:632
+#: wp-includes/rest-api.php:608 wp-includes/rest-api.php:633
 msgid "%1$s (since %2$s; %3$s)"
 msgstr "%1$s (desde %2$s; %3$s)"
 
 #. translators: 1: Function name, 2: WordPress version number.
-#: wp-includes/rest-api.php:586 wp-includes/rest-api.php:610
+#: wp-includes/rest-api.php:587 wp-includes/rest-api.php:611
 msgid "%1$s (since %2$s; no alternative available)"
 msgstr "%1$s (desde %2$s; sin alternativa disponible)"
 
 #. translators: 1: Function name, 2: WordPress version number, 3: New function
 #. name.
-#: wp-includes/rest-api.php:583
+#: wp-includes/rest-api.php:584
 msgid "%1$s (since %2$s; use %3$s instead)"
 msgstr "%1$s (desde %2$s; usa en su lugar %3$s)"
 
@@ -7999,7 +7999,7 @@ msgstr "Cuando empiezas un párrafo nuevo con uno de estos atajos de formato, se
 
 #: wp-login.php:836
 msgid "Your password reset link has expired. Please request a new link below."
-msgstr "Tu enlace de restablecimiento de contraseña ha caducado. Por favor, solicita un nuevo enlace abajo."
+msgstr "El enlace de restablecimiento de contraseña ya expiró. Solicitá un nuevo enlace abajo."
 
 #: wp-login.php:834
 msgid "Your password reset link appears to be invalid. Please request a new link below."
@@ -12529,7 +12529,7 @@ msgstr "Lo siento, no tenés permisos para publicar esta entrada. "
 #: wp-includes/class-wp-xmlrpc-server.php:4951
 #: wp-includes/class-wp-xmlrpc-server.php:6439
 msgid "Either there are no posts, or something went wrong."
-msgstr "Una de dos, o no hay entradas o algo fue mal."
+msgstr "Una de dos: o no hay entradas o algo salió mal."
 
 #: wp-includes/class-wp-xmlrpc-server.php:4231
 msgid "Sorry, you are not allowed to update options."
