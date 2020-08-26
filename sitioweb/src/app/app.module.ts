@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ErrorComponent } from './components/error/error.component';
+
 
 // post wp
 import { HttpClientModule } from '@angular/common/http';
@@ -19,7 +21,8 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ErrorComponent
     ],
   imports: [
     BrowserModule,

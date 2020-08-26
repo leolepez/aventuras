@@ -1,5 +1,8 @@
 import { NgModule, Component } from '@angular/core';
+import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from '@angular/router';
+import { ErrorComponent } from './components/error/error.component';
+
 
 const routes: Routes = [
   {
@@ -29,6 +32,8 @@ const routes: Routes = [
     path: 'contacto', loadChildren: () =>
     import ('./components/contacto/contacto.module' ).then(m => m.ContactoModule)
   },
+
+  { path: '**', component: ErrorComponent}, // esta es otra manera más facil de cargar rutas
 
   { path: '', pathMatch: 'full', redirectTo: 'inicio' }
 ];
