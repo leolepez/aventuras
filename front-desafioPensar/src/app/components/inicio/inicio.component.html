@@ -1,0 +1,69 @@
+<div class="site-wrap" id="home-section">
+  <header class="container-fluid" id="titulo">
+    <div id="myCarousel" class="carousel slide">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../../assets/img/banners/hola-nuevas-aventuras-original.png" alt="Hola nuevas aventuras"
+            width="1100" height="400">
+        </div>
+        <div class="carousel-item">
+          <img src=".../../../assets/img/banners/queres-conocernos-entrar.png" alt="Queres conocernos?" width="1100"
+            height="400">
+        </div>
+        <div class="carousel-item">
+          <img src="../../../assets/img/banners/te-desafio-entrar.png" alt="Te desafio a entrar" width="1100"
+            height="400">
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="container pt-3 pb-3" id="inicio-contenido">
+    <div class="row">
+
+      <div class="col"></div>
+      <div class="col-md-5 col-sm-12">
+        <img class="img-fluid" src="../../../assets/img/inicio/ver-elmundo-index.jpg" alt="ver el mundo">
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <h3>Ver el mundo con ojos, cerebro y corazón de científico</h3>
+        <p>Prejuicios de lado, hacer ciencia es atrapante y divertido.
+          Newton hizo el siguiente balance de su vida,
+          indicando que no sabía la impresión que había dado al resto del mundo,
+          pero que él se sentía como un niño asombrado,
+          juntando conchas y piedras traídas por el inmenso océano de la verdad.
+          Para ser científicos hay que tener la capacidad de maravillarse con las cosas más simples y no tenidas en
+          cuenta por los demás.
+        </p>
+      </div>
+      <div class="col "></div>
+
+    </div>
+
+  </section>
+<!--
+  <section class="container-fluid pt-3 pb-3" id="ultimasnoticias">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-md-10 col-sm-12">
+        <h3 class="text-uppercase font-weight-bold mt-5 text-left">
+          <span class="bagde bagde-warning">Últimas noticias</span>
+        </h3>
+        <ul class="list-unstyled">
+          <li class="media" (click)="mostrarNoticia()" *ngFor="let noticia of noticias | async">
+            <div class="media-body" class="tarjeta">
+              <h5 class="mt-0 mb-1">{{noticia.title.rendered}}</h5>
+              <p [innerHTML]="noticia.excerpt.rendered"></p >
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col"></div>
+    </div>
+  </section> -->
+  <section class="container-fluid" id="home-contacto">
+    <img src="../../../assets/img/banners/contacto-banner-original.jpg"  [routerLink]="['/contacto']" class="img-fluid">
+  </section>
+</div>

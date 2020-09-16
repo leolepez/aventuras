@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { WpService } from "../../@service/wp.service";import { Global } from "../../@service/global";
+import { WpI } from "../../@service/wp.interfaces";
+
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -9,18 +13,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class NoticiasComponent implements OnInit {
 
-  posts = [];
+  public noticias: Observable<WpI[]> ;
 
-  constructor(private http: HttpClient) { }
+  constructor(private router: Router, private _wpService: WpService ) {
+
+  }
+
 
   ngOnInit(): void {
-    this.http.get('http://localhost:8888/backend/wp-json/wp/v2/posts').subscribe(data => {
-      for (let clave in data) {
-        if (data.hasOwnProperty(clave) ) {
-          this.posts.push(data[clave]);
-        }
-      }
-      console.log(this.posts[0].title.rendered);
-    });
+    this.getNoticias();
+
+  }
+
+  mostrarNoticia(){
+    this.router.navigateByUrl('noticia-completa');
+  }
+
+  getNoticias() {
+    this.noticias = this._wpService.getPosts();
   }
 }

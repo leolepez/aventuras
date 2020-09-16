@@ -4,15 +4,27 @@
       <img src="../../../assets/img/banners/entereate-noticias.png" class="mx-auto d-block" height="400px">
     </div>
   </header>
- </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-          <div *ngFor="let post of posts">
-            <h2>{{post.title.rendered}}</h2>
-            <div class="contenido" [innerHTML]=""></div>
 
+
+
+        <section class="container-fluid  pb-3" id="ultimasnoticias">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-md-10 col-sm-12">
+              <h3 class="text-uppercase font-weight-bold mt-5 text-left">
+                <span class="bagde bagde-warning">Últimas noticias</span>
+              </h3>
+              <ul class="list-unstyled">
+                <li class="media" (click)="mostrarNoticia()" *ngFor="let noticia of noticias | async">
+                  <div class="media-body" class="tarjeta">
+                    <h5 class="mt-0 mb-1">{{noticia.title.rendered}}</h5>
+                    <p [innerHTML]="noticia.excerpt.rendered"></p >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col"></div>
           </div>
-      </div>
-    </div>
-  </div>
+        </section>
+
+   </div>

@@ -3,11 +3,11 @@
 
 #home-section{
   background-color: #FC5085;
-
-
 }
 #titulo{
   color: white;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 /* Make the image fully responsive */
@@ -20,7 +20,19 @@
 }
 #ultimasnoticias{
   background-color: #39C123;
-  color: white;
+
+}
+
+.tarjeta{
+  background-color: white;
+  color: #39C123;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.tarjeta p{
+  color: darkgrey;
+  font-size: 15px;
 }
 
   #home-contacto{

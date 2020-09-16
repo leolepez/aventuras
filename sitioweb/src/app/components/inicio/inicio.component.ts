@@ -1,29 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { WpService } from "../../@service/wp.service";
+import { WpI } from "../../@service/wp.interfaces";
+
+import { Observable } from 'rxjs';
 
 declare var $: any;
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
-
+  styleUrls: ['./inicio.component.css'],
+  providers: [WpService]
 })
 export class InicioComponent implements OnInit {
 
-  constructor(private router: Router ) { 
-    
+  public noticias: Observable<WpI[]> ;
+
+  constructor(private router: Router, private _wpService: WpService ) {
+
   }
 
   mostrarNoticia(){
-    this.router.navigateByUrl('noticiaCompleta');
+    this.router.navigateByUrl('noticia-completa');
   }
 
   ngOnInit(): void {
-    
+
     $(document).ready(function(){
         // Activate Carousel
         $("#myCarousel").carousel();
-          
+
         // Enable Carousel Indicators
         $(".item1").click(function(){
           $("#myCarousel").carousel(0);
@@ -34,17 +40,29 @@ export class InicioComponent implements OnInit {
         $(".item3").click(function(){
           $("#myCarousel").carousel(2);
         });
-          
-        // Enable Carousel Controls
-        $(".carousel-control-prev").click(function(){
-          $("#myCarousel").carousel("prev");
-        });
-        $(".carousel-control-next").click(function(){
-          $("#myCarousel").carousel("next");
-        });
+        // cargar noticias del wordpress
+
 
     });
 
+    this.getNoticias();
+
   }
-    
+
+    getNoticias() {
+
+    this.noticias = this._wpService.getPosts();
+    /* this._wpService.getPosts().subscribe(
+      response => {
+
+        if (response.noticias) {
+          console.log(response.noticias.title.rendered);
+      }
+      },
+      error => {
+        console.log(<any>error);
+      }
+    ) */
+  }
+
 }

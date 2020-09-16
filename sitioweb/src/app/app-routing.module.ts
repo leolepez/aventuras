@@ -1,10 +1,13 @@
 import { NgModule, Component } from '@angular/core';
-import { ModuleWithProviders } from "@angular/core";
+
 import { Routes, RouterModule } from '@angular/router';
 import { ErrorComponent } from './components/error/error.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { NoticiaCompletaComponent } from './shared/noticia-completa/noticia-completa.component';
 
 
 const routes: Routes = [
+  { path: '', component: InicioComponent },
   {
     path: 'inicio', loadChildren: () =>
     import ('./components/inicio/inicio.module' ).then(m => m.InicioModule)
@@ -33,9 +36,9 @@ const routes: Routes = [
     import ('./components/contacto/contacto.module' ).then(m => m.ContactoModule)
   },
 
-  { path: '**', component: ErrorComponent}, // esta es otra manera más facil de cargar rutas
+  { path: 'noticia-completa', component: NoticiaCompletaComponent },
 
-  { path: '', pathMatch: 'full', redirectTo: 'inicio' }
+  { path: '**', component: ErrorComponent} // esta es otra manera más facil de cargar rutas
 ];
 
 @NgModule({

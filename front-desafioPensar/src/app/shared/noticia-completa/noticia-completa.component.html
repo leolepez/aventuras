@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" *ngfor="let f of feed">
+      <img class="img-fluid" style="height: 500px !important; width: 100%" [src]="f?._embedded['wp:featuredmedia']['0'].source_url" alt="{{f.title.rendered}}">
+      <h2 class="text-center">{{f.title.rendered}}</h2>
+      <p class="txt-lead">Autor: {{f?._embedded['author']['0'].name}} </p>
+      <div [innerhtml]="f.content.rendered"></div>
+    </div>
+  </div>
+</div>

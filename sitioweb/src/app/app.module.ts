@@ -7,10 +7,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ErrorComponent } from './components/error/error.component';
-
+import { NoticiaCompletaComponent } from './shared/noticia-completa/noticia-completa.component';
 
 // post wp
 import { HttpClientModule } from '@angular/common/http';
+
+//formularios de angular
+import { FormsModule } from "@angular/forms";
 
 // pasar a producción
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -22,12 +25,14 @@ import { environment } from '../environments/environment';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    ErrorComponent
+    ErrorComponent,
+    NoticiaCompletaComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

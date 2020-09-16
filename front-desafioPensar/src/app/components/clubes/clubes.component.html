@@ -1,0 +1,45 @@
+<div class="site-wrap" id="home-section">
+  <header class="site-section-cover overlay " id="titulo">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-10 text-center pt-5">
+          <h1><strong>Clubes de ciencias</strong></h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="site-section bg-light pt-5" id="contenido">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mb-5">
+          <!-- contenido-->
+          <h3 class="text-uppercase font-weight-bold mt-5 text-left">
+            <span class="bagde bagde-warning">Desafios</span>
+          </h3>
+          <div class="list-unstyled">
+            <div class="col-md-6 col-sm-12 mb-5"  *ngFor="let f of feed | async">
+              <div class="card tarjeta" (click)="mostrarNoticia(f.id)">
+                <img class="card-img-top" alt="Bootstrap Thumbnail First" [src]="f?._embedded['wp:featuredmedia']['0'].source_url" alt="{{f.title.rendered}}">
+                <div class="card-block" contenteditable="true">
+                  <h5 class="card-title">{{f.title.rendered}}</h5>
+                  <p class="card-text" [innerHTML]="f.excerpt.rendered"></p>
+                  <p><a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin contenido-->
+        </div>
+        <!-- sidebar -->
+        <div class="col-lg-4 ml-auto">
+          <div class="bg-white p-3 p-md-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos, aspernatur ducimus nostrum dolorem laboriosam sapiente iusto magnam veniam natus eum ut quia inventore laudantium facere optio repellat reprehenderit earum!</p>
+          </div>
+        </div>
+         <!-- fin sidebar -->
+      </div>
+    </div>
+
+  </section>
+</div>
