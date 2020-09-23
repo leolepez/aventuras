@@ -72,18 +72,19 @@
             </div>
 
         </div>
-          <div class="col-md-4"><!-- sidebar-->
+        <div class="col-md-4"><!-- sidebar-->
 
-            <button type="button" class="btn btn-success btn-lg btn-block">
-              Button
-            </button>
-            <button type="button" class="btn btn-info btn-block btn-lg">
-              Button
-            </button>
-            <button type="button" class="btn btn-warning btn-block btn-lg">
-              Button
-            </button>
-          </div> <!-- fin sidebar-->
+          <button type="button" [routerLink]="['/clubes']" class="btn btn-success btn-lg btn-block">
+            Clubes
+          </button>
+          <button type="button" [routerLink]="['/desafios']" class="btn btn-info btn-block btn-lg">
+            Desafios
+          </button>
+          <button type="button" [routerLink]="['/personajes']" class="btn btn-warning btn-block btn-lg">
+            Personajes
+          </button>
+        </div> <!-- fin sidebar-->
+
 
       </div>
     </div>

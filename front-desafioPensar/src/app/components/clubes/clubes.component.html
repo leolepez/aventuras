@@ -11,34 +11,82 @@
   <section class="site-section bg-light pt-5" id="contenido">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mb-5">
-          <!-- contenido-->
-          <h3 class="text-uppercase font-weight-bold mt-5 text-left">
-            <span class="bagde bagde-warning">Desafios</span>
-          </h3>
-          <div class="list-unstyled">
-            <div class="col-md-6 col-sm-12 mb-5"  *ngFor="let f of feed | async">
-              <div class="card tarjeta" (click)="mostrarNoticia(f.id)">
-                <img class="card-img-top" alt="Bootstrap Thumbnail First" [src]="f?._embedded['wp:featuredmedia']['0'].source_url" alt="{{f.title.rendered}}">
-                <div class="card-block" contenteditable="true">
-                  <h5 class="card-title">{{f.title.rendered}}</h5>
-                  <p class="card-text" [innerHTML]="f.excerpt.rendered"></p>
-                  <p><a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a></p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="page-header">
+
+                  <h1>
+                     <small>En los Clubes 4.0 partimos de algo que se quiere saber, de un problema y le buscamos la solución, haciendo lo que nos gusta y aprendiendo.</small>
+                  </h1>
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="imagen">
+                  <img class="img-fluid" alt="Clubes logo" src="../../../assets/img/clubes/clubes-logo.png" />
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h2>¿En qué consisten?</h2>
+                <p>
+                  Estos clubes se deben enfocar en los siguientes puntos:
+                </p>
+                <ul>
+                  <li>Indagación</li>
+                  <li>Desarrollo del pensamiento científico</li>
+                  <li>Resolución de problemas</li>
+                  <li>Vinculación cognitiva y transdisciplinariedad</li>
+                </ul>
+                <p>Se busca que los/as chicos/as tengan un acercamiento lúdico, creativo y progresivamente sistemático hacia las actividades del quehacer científico y tecnológico.</p>
+                <p>En los clubes 4.0 se les presentan desafíos y problemas que deben resolver utilizando múltiples y distintas estrategias. De esta manera, acceden a una oferta recreativa donde aprenden, se divierten y despiertan vocaciones en el campo de las ciencias y la tecnología.
+                <p>La base pedagógica sobre la que se desenvuelven los clubes es el aprendizaje basado en problemas, que permite a los alumnos poner en práctica sus conocimientos gracias a generar un interés colectivo que valore las experiencias individuales para el enriquecimiento de todo el grupo. El club no se concibe como una estructura rígida, sino como un espacio de aprendizaje interactivo que busca el desarrollo pleno de las habilidades de los estudiantes.</p>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="imagen">
+                  <img class="img-fluid" alt="Clubes logo" src="../../../assets/img/clubes/tuercas.png" />
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h2>¿Sobre qué trabajan?</h2>
+                <p>
+                  Fundamentado en dichos lineamientos comunes, un club 4.0 debe promover la creación de proyectos que incentiven la investigación, partiendo de la exploración de:
+                </p>
+                <ul>
+                  <li>La cotidianeidad, para plantear en los estudiantes preguntas sobre cómo funciona la naturaleza y aquellos aparatos que por ser considerados comunes y corrientes, pasan desapercibidos, para de esta forma, despertar su curiosidad por aprender y experimentar; a través de actividades enmarcadas en las ciencias naturales, ciencias exactas, tecnología, reciclaje, ecología y protección de la naturaleza.</li>
+                  <li>Los problemas que tiene la sociedad y el sistema productivo, para darle una mirada desde una nueva perspectiva.</li>
+
+                </ul>
+                <p>Los participantes en el desarrollo de proyectos científicos pueden compartir diversas experiencias, incluso se puede integrar a la familia en la construcción del conocimiento.
+                </p>
+              </div>
+            </div>
           </div>
-          <!--Fin contenido-->
+
+          <div class="col-md-4"><!-- sidebar-->
+
+            <button type="button" [routerLink]="['/clubes']" class="btn btn-success btn-lg btn-block">
+              Clubes
+            </button>
+            <button type="button" [routerLink]="['/desafios']" class="btn btn-info btn-block btn-lg">
+              Desafios
+            </button>
+            <button type="button" [routerLink]="['/personajes']" class="btn btn-warning btn-block btn-lg">
+              Personajes
+            </button>
+          </div> <!-- fin sidebar-->
+
         </div>
-        <!-- sidebar -->
-        <div class="col-lg-4 ml-auto">
-          <div class="bg-white p-3 p-md-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos, aspernatur ducimus nostrum dolorem laboriosam sapiente iusto magnam veniam natus eum ut quia inventore laudantium facere optio repellat reprehenderit earum!</p>
-          </div>
-        </div>
-         <!-- fin sidebar -->
-      </div>
+
+      </div><!-- fin de container fluid-->
     </div>
 
   </section>
