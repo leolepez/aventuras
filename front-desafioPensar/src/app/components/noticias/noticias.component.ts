@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { WpService } from "../../@service/wp.service";
-import { Global } from "../../@service/global";
 import { WpI } from "../../@service/wp.interfaces";
 
 import { Observable } from 'rxjs';

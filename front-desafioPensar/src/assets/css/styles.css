@@ -4,6 +4,15 @@
   src: url("../fonts/RadioGrotesk-Regular.otf");
 }
 
+:root{
+  --violeta:  #8F2DFF;
+  --bronce: #A37204;
+  --plata: #E2E1DE;
+  --oro:#E2B853;
+}
+
+
+
 *{
    padding:0;
    margin:0;
@@ -20,6 +29,16 @@
   font-size: 20px;
   width: 100%;
 
+}
+
+.bronce{
+  background-color: var(--bronce);
+}
+.plata{
+  background-color: var(--plata);
+}
+.oro{
+  background-color: var(--oro);
 }
 
 .site-wrap{
@@ -53,29 +72,13 @@
     max-width: 200px;
 }
 
-.colorBody1 {
-  background: #281EBE 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 13px 18px 22px -10px rgba(204,12,NaN,1);
-  -moz-box-shadow: 13px 18px 22px -10px rgba(204,12,NaN,1);
-  box-shadow: 13px 18px 22px -10px rgba(204,12,NaN,1);
-  opacity: 0.87;
-  border-radius: 2px;
-  padding: 0px;
-}
 
 
 .colorName3 {
   color: #FFFFFF !important;
 }
 
-.colorName4 {
-  color: #FFFFFF !important;
-  text-shadow: 2px 2px 4px rgb(83, 83, 8);
-}
 
-.cursor7 {
-  cursor: pointer;
-}
 
 
 /** footer */
@@ -99,8 +102,18 @@
   color: #00acee;
   }
 
+  /**** post **/
 
+#post .articulo{
+  background-color: #eee !important;
+  border: 5px solid white;
+  padding: 20px;
+}
 
+#post .articulo img{
+  width: 100%!important;
+  height: auto;
+}
 
 /* Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/

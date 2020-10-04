@@ -14,11 +14,12 @@ import { Observable } from 'rxjs';
 })
 export class DesafiosComponent implements OnInit {
 
+  public nivel: string;
 
   public feed: Observable<WpI[]> ;
 
   constructor(private router: Router, private _wpService: WpService ) {
-
+       this.nivel;
   }
 
 

@@ -1,9 +1,5 @@
 <div class="site-wrap" id="home-section">
-  <!--<header class="container-fluid" id="titulo">
-    <div id="myCarousel" class="carousel slide">
-        <img src="../../../assets/img/banners/te-desafio-entrar-originall.png" class="d-block w-100" >
-    </div>
-  </header> borrar-->
+
   <header class="site-section-cover overlay " id="titulo">
     <div class="container">
       <div class="row align-items-center justify-content-center">
@@ -16,114 +12,94 @@
   <section class="site-section bg-light pt-5" id="contenido">
 
     <div class="container">
-     <!--  <div class="row">
-        <div class="col-lg-8 mb-5">
 
-          <h3 class="text-uppercase font-weight-bold mt-5 text-left">
-            <span class="bagde bagde-warning">Desafios</span>
-          </h3>
-          <div class="list-unstyled">
-            <div class="col-md-6 col-sm-12 mb-5"  *ngFor="let f of feed | async">
-              <div class="card tarjeta" (click)="mostrarNoticia(f.id)">
-                <img class="card-img-top" alt="Bootstrap Thumbnail First" [src]="f?._embedded['wp:featuredmedia']['0'].source_url" alt="{{f.title.rendered}}">
-                <div class="card-block" contenteditable="true">
-                  <h5 class="card-title">{{f.title.rendered}}</h5>
-                  <p class="card-text" [innerHTML]="f.excerpt.rendered"></p>
-                  <p><a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a></p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="page-header">
+                  <h1>
+                    Empieza la Aventura <small>selecciona el nivel para ganar</small>
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" alt="Medalla de bronce"
+                    src="../../../assets/img/medallas/medallas_bronce.png" />
+                  <div class="card-block">
+                    <h5 class="card-title">
+                      Medalla de bronce
+                    </h5>
+                    <p class="card-text">
+                      Compite por estos desafios para obtener una medalla de bronce.
+                    </p>
+                    <p>
+                      <a class="btn btn-primary" (click)="nivel='nvl1'">Participar</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" alt="Medalla de plata"
+                    src="../../../assets/img/medallas/medallas_plata 1.png" />
+                  <div class="card-block">
+                    <h5 class="card-title">
+                      Medalla de plata
+                    </h5>
+                    <p class="card-text">
+                      Compite por estos desafios para obtener una medalla de plata.
+                    </p>
+                    <p>
+                      <a class="btn btn-primary" (click)="nivel='nvl2'">Participar</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" alt="Medalla de oro" src="../../../assets/img/medallas/medallas_Oro.png" />
+                  <div class="card-block">
+                    <h5 class="card-title">
+                      Medalla de oro
+                    </h5>
+                    <p class="card-text">
+                      Compite por estos desafios para obtener una medalla de Oro.
+                    </p>
+                    <p>
+                      <a class="btn btn-primary" (click)="nivel='nvl3'" >Participar</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
+
+
         </div>
 
-        <div class="col-lg-4 ml-auto">
-          <div class="bg-white p-3 p-md-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos, aspernatur ducimus nostrum dolorem laboriosam sapiente iusto magnam veniam natus eum ut quia inventore laudantium facere optio repellat reprehenderit earum!</p>
+       <div [ngSwitch]="nivel">
+          <div *ngSwitchCase="'nvl1'">
+            <app-nivel1></app-nivel1>
           </div>
+          <div *ngSwitchCase="'nvl2'">
+            <app-nivel2></app-nivel2>
+          </div>
+          <div *ngSwitchCase="'nvl3'">
+            <app-nivel3></app-nivel3>
+          </div>
+          <div *ngSwitchDefault></div>
         </div>
 
-      </div>-->
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="page-header">
-                          <h1>
-                            Empieza la Aventura <small>selecciona el nivel para ganar</small>
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img class="card-img-top" alt="Medalla de bronce" src="../../../assets/img/medallas/medallas_bronce.png" />
-                          <div class="card-block">
-                            <h5 class="card-title">
-                              Medalla de bronce
-                            </h5>
-                            <p class="card-text">
-                              Compite por estos desafios para obtener una medalla de bronce.
-                            </p>
-                            <p>
-                              <a class="btn btn-primary" href="#">Jugar</a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img class="card-img-top" alt="Medalla de plata" src="../../../assets/img/medallas/medallas_plata 1.png" />
-                          <div class="card-block">
-                            <h5 class="card-title">
-                              Medalla de plata
-                            </h5>
-                            <p class="card-text">
-                              Compite por estos desafios para obtener una medalla de plata.
-                            </p>
-                            <p>
-                              <a class="btn btn-primary" href="#">Jugar</a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card">
-                          <img class="card-img-top" alt="Medalla de oro" src="../../../assets/img/medallas/medallas_Oro.png" />
-                          <div class="card-block">
-                            <h5 class="card-title">
-                              Medalla de oro
-                            </h5>
-                            <p class="card-text">
-                              Compite por estos desafios para obtener una medalla de Oro.
-                            </p>
-                            <p>
-                              <a class="btn btn-primary" href="#">Jugar</a>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4"><!-- sidebar-->
-
-                    <button type="button" [routerLink]="['/clubes']" class="btn btn-success btn-lg btn-block">
-                      Clubes
-                    </button>
-                    <button type="button" [routerLink]="['/desafios']" class="btn btn-info btn-block btn-lg">
-                      Desafios
-                    </button>
-                    <button type="button" [routerLink]="['/personajes']" class="btn btn-warning btn-block btn-lg">
-                      Personajes
-                    </button>
-                  </div> <!-- fin sidebar-->
-
-
-
-                </div>
-              </div><!-- fin de container fluid-->
-       </div>
+      </div><!-- fin de container fluid-->
+    </div>
   </section>
- </div>
+
+
+
+</div>

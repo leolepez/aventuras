@@ -16,6 +16,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
 
 
+//implemetacion para usar iconos svg
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import icons from '../assets/svg/svg-icons';
+import { SvgIconsModule } from '@ngneat/svg-icon';
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +35,11 @@ import { FormsModule } from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularSvgIconModule.forRoot(),
+    SvgIconsModule.forRoot({
+      icons
+    })
     ],
   providers: [],
   bootstrap: [AppComponent]

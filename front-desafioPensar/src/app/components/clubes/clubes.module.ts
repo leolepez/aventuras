@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { ClubesRoutingModule } from './clubes-routing.module';
 import { ClubesComponent } from './clubes.component';
+import { PostClubesComponent } from './post-clubes/post-clubes.component';
 
 
 @NgModule({
-  declarations: [ClubesComponent],
+  declarations: [ClubesComponent, PostClubesComponent],
   imports: [
     CommonModule,
     ClubesRoutingModule

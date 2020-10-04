@@ -2,6 +2,19 @@
 #home-section{
   background-color: #FC5085;
 }
+.portada{
+  padding: 10%;
+}
+
+.portada img{
+  width: 50%;
+  height: auto;
+}
+
+.portada h1{
+  font-size: 300%;
+
+}
 
 #titulo{
   color: white;

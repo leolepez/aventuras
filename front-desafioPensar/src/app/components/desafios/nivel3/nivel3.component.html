@@ -1,0 +1,11 @@
+<section id="post" class="container">
+  <h3> Inicia la aventura del nivel Oro</h3>
+   <div class="row">
+     <article class="col-lg-4 col-md-6 col-sm-12 articulo" *ngFor="let post of postList | async">
+       <h3>{{post.title.rendered}}</h3>
+       <img class="img-fluid" src="{{post.featured_image}}" alt="{{post.title.rendered}}">
+       <div class="content-post-nivel1" [innerHTML]="post.excerpt.rendered">
+       </div>
+     </article>
+   </div>
+ </section>
