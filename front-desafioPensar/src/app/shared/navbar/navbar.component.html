@@ -1,5 +1,5 @@
-<div class="container-fluid ">
-  <nav class="navbar navbar-expand-lg navbar-light mt-1">
+<div class="container-fluid menu">
+  <nav class="navbar navbar-expand-lg  navbar-light mt-1 menu">
     <a class="navbar-brand ml-3 " [routerLink]="['/inicio']">
       <img src="../../../assets/img/logo-blanco.png"  class="d-inline-block align-top logo" alt="Desafio pensar" loading="lazy">
 
@@ -11,41 +11,40 @@
     </button>
 
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav pr-5 mr-auto">
+
           <!-- <li class="nav-item " routerLinkActive="active">
-            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/inicio']"><i class="fas fa-house-user"> Inicio</i></a>
+            <a (click)="cerrarNavbar()" class="nav-link iconoMenu" [routerLink]="['/inicio']"><i class="fas fa-house-user"> Inicio</i></a>
           </li>
           <li class="nav-item " routerLinkActive="active">
-            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/noticias']"><i class="far fa-newspaper"></i> Noticias</a>
+            <a (click)="cerrarNavbar()" class="nav-link iconoMenu" [routerLink]="['/noticias']"><i class="far fa-newspaper"></i> Noticias</a>
           </li> -->
-          <li class="nav-item " routerLinkActive="active">
-            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/clubes']" >
-              <img src="../../../assets/svg/experimentacion.svg"  width="40px" height="40px"alt="clubes">
-            </a>
-          </li>
-          <li class="nav-item " routerLinkActive="active">
-            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/desafios']">
-              <img src="../../../assets/svg/desafios.svg"  width="40px" height="40px"alt="desafios">
-            </a>
-         </li>
-          <li class="nav-item " routerLinkActive="active">
-            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/personajes']">
-              <img src="../../../assets/svg/cientifico.svg"  width="40px" height="40px"alt="personajes">
-            </a>
-          </li>
-          <li class="nav-item " routerLinkActive="active">
-            <a (click)="cerrarNavbar()" class="nav-link colorName3" [routerLink]="['/contacto']">
-              <img src="../../../assets/svg/comunicacion.svg"  width="40px" height="40px"alt="contacto">
-            </a>
-          </li>
-        </ul>
+
+            <ul class="navbar-nav pr-0 mx-auto">
+
+                <li class="nav-item mr-lg-5" routerLinkActive="active">
+                  <a (click)="cerrarNavbar()" class="nav-link iconoMenu" [routerLink]="['/desafios']">
+                    <img src="../../../assets/img/botones/desafios.png" height="60px" alt="desafios">
+                  </a>
+              </li>
+              <li class="nav-item ml-lg-5 mr-lg-5 " routerLinkActive="active">
+                <a (click)="cerrarNavbar()" class="nav-link iconoMenu" [routerLink]="['/clubes']" >
+                  <img src="../../../assets/img/botones/clubes.png"   height="60px" alt="clubes">
+                </a>
+              </li>
+
+                <li class="nav-item ml-lg-5" routerLinkActive="active">
+                  <a (click)="cerrarNavbar()" class="nav-link iconoMenu" [routerLink]="['/contacto']">
+                    <img src="../../../assets/img/botones/contacto.png"  height="60px" alt="contacto">
+                  </a>
+                </li>
+             </ul>
+
             <!--<p class="mr-2">
               <button class="btn btn-outline-warning my-2" type="button">Ingresa</button>
             </p>-->
             <form class="form-inline my-2 my-lg-0 " (keyup)="searchWord()">
-              <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search" [(ngModel)]="wordSearch" >
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
-              </button>
+              <input class="form-control rounded-pill mr-sm-2" id="buscar" type="search" placeholder="buscar" aria-label="Search" [(ngModel)]="wordSearch" >
+
             </form>
        </div>
   </nav>

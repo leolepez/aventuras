@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { WpService } from "../../../@service/wp.service";
 import { WpI } from "../../../@service/wp.interfaces";
@@ -21,7 +22,7 @@ export class Nivel1Component implements OnInit {
 
   ngOnInit(): void {
     this.getNoticias();
-    console.log("titulo: "+ this.getNoticias());
+
 
   }
 
@@ -31,6 +32,13 @@ export class Nivel1Component implements OnInit {
 
   getNoticias() {
     this.postList = this._wpService.getPostsDesafiosNivel1();
+    this.postList.forEach(element => {
+
+      console.log("hola"+element);
+
+    });;
+
   }
+
 
 }

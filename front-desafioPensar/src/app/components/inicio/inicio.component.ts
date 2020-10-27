@@ -46,12 +46,23 @@ export class InicioComponent implements OnInit {
 
   }
 
+    mostarDesafio() {
+
+    document.getElementById('robotDesafio').style.visibility = 'visible';
+    
+
+  }
+
+    ocultarImagenesDesafio() {
+    document.getElementById('robotDesafio').style.visibility = 'hidden';
+    }
+
   getNoticias() {
 
     this.noticias = this._wpService.getPostsNoticias();
     /* this._wpService.getPosts().subscribe(
       response => {
- 
+
         if (response.noticias) {
           console.log(response.noticias.title.rendered);
       }

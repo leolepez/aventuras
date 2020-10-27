@@ -5,10 +5,12 @@
 }
 
 :root{
+  --Azul: #281EBE;
   --violeta:  #8F2DFF;
   --bronce: #A37204;
   --plata: #E2E1DE;
   --oro:#E2B853;
+
 }
 
 
@@ -25,11 +27,30 @@
 
 .bodysitio {
   font-family: "Radio Grotesk Regular", Arial, Helvetica, sans-serif;
-  background-color: #281EBE;
+  background-color: white;
   font-size: 20px;
   width: 100%;
 
 }
+
+.menu{
+  background-color: white;
+  border-color: white;
+}
+
+#buscar{
+  background-color:slategray!important;
+  color: white!important;
+  font-weight: bold!important;
+  background: url(../../assets/img/botones/buscar.png) no-repeat scroll 7px 7px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30% 100%;
+  padding-left:30px;
+  height: 60px;
+}
+
+
 
 .bronce{
   background-color: var(--bronce);
@@ -78,10 +99,19 @@
   color: #FFFFFF !important;
 }
 
+.iconoMenu:hover {
+  background-color: var(--Azul) !important;
+}
 
 
 
 /** footer */
+footer{
+  padding: 10px;
+  background-color: var(--Azul);
+  border-color: var(--Azul);
+  margin-bottom: -10px!important;
+}
 
 .fa-whatsapp {
   color: #25D366;

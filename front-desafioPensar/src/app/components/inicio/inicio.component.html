@@ -1,31 +1,40 @@
 <div class="site-wrap" id="home-section">
-  <header class="container-fluid" id="titulo">
-    <div class="row">
-      <div class="d-flex flex-row portada">
-        <div class="p-2"><img class="img-fluid" src="../../../assets/img/gato-02.png" alt="gato-robot"></div>
-        <div class="p-2 "><h1>!Bienvenidos a la aventura!</h1></div>
+  <section class="container" id="titulo">
+
+    <div class="d-flex justify-content-between clearfix personajes">
+      <div class="col-6">
+        <img class="img-fluid float-right" id="robotDesafio"  src="../../../assets/img/Personajes/Comp-2.gif" alt="robot">
+
+      </div>
+      <div class="col-6">
+        <img class="img-fluid" id="robotClubes" src="../../../assets/img/Personajes/Comp-2.gif" alt="robot">
 
       </div>
     </div>
-  </header>
+
+      <div class="d-flex justify-content-between clearfix portada">
+        <div class="col-6">
+          <img class="img-fluid shadow p-3 mt-5 bg-white
+           float-right mr-3" src="../../../assets/img/botones/desafio-pensar-1.png" alt="Desafio Pensar" onblur="mostarDesafio()"  >
+
+        </div>
+        <div class="col-6">
+          <img class="img-fluid shadow p-3 mt-5 bg-white rounded ml-3" src="../../../assets/img/botones/clubes-deciencia1.png" alt="Clubes de Ciencia" onmouseover="mostar(this)"  onmouseout="ocultarImagenes(this)">
+
+        </div>
+      </div>
+
+  </section>
 
   <section class="container pt-3 pb-3" id="inicio-contenido">
     <div class="row">
 
       <div class="col"></div>
       <div class="col-md-5 col-sm-12">
-        <img class="img-fluid" src="../../../assets/img/inicio/ver-elmundo-index.jpg" alt="ver el mundo">
+        <!-- imagen o columna random-->
       </div>
       <div class="col-md-5 col-sm-12">
-        <h3>Ver el mundo con ojos, cerebro y corazón de científico</h3>
-        <p>Prejuicios de lado, hacer ciencia es atrapante y divertido.
-          Newton hizo el siguiente balance de su vida,
-          indicando que no sabía la impresión que había dado al resto del mundo,
-          pero que él se sentía como un niño asombrado,
-          juntando conchas y piedras traídas por el inmenso océano de la verdad.
-          Para ser científicos hay que tener la capacidad de maravillarse con las cosas más simples y no tenidas en
-          cuenta por los demás.
-        </p>
+        <!-- texto random-->
       </div>
       <div class="col "></div>
 
@@ -51,8 +60,8 @@
       </div>
       <div class="col"></div>
     </div>
-  </section> -->
+  </section>
   <section class="container-fluid" id="home-contacto">
     <img src="../../../assets/img/banners/contacto-banner-original.jpg"  [routerLink]="['/contacto']" class="img-fluid">
-  </section>
+  </section> -->
 </div>

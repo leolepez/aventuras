@@ -1,25 +1,55 @@
 /***** inicio ****/
 #home-section{
-  background-color: #FC5085;
+  background-color:white;
+
 }
+
+
+#titulo{
+
+  color: white;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .portada{
-  padding: 10%;
+  background: url(../../../assets/img/fondo.png) ;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% 200%;
+  z-index: 200;
+  height: 300px;
+
+}
+
+.div-imagen {
+  display:inline-block;
+  position:relative;
+}
+
+#robotDesafio{
+  visibility: hidden;
+}
+
+#robotClubes{
+  visibility: visible;
+  margin-bottom: 00px;
 }
 
 .portada img{
-  width: 50%;
-  height: auto;
+  background-color: white;
+  max-width: 250px;
+
+}
+
+.portada img:hover{
+
+
 }
 
 .portada h1{
   font-size: 300%;
 
-}
-
-#titulo{
-  color: white;
-  padding-right: 0px;
-  padding-left: 0px;
 }
 
 /* Make the image fully responsive */
@@ -55,8 +85,14 @@
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { }
+@media (min-width: 576px) {
+  .portada img{
 
+
+
+
+  }
+ }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {  }
 

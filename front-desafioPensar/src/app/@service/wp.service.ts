@@ -56,7 +56,8 @@ export class WpService {
     let headers = new HttpHeaders().set('Content-Type','application/json');
 
     let options = {params: { per_page: '9' }, headers: headers}
-    return this.http.get<WpI[]>(this.urlPost + this.urlDesafiosNivel1, options);
+    return this.http.get<WpI[]>(this.urlPost +'?filter[categories]=6', options);
+
    }
 
    getPostsDesafiosNivel2(): Observable<WpI[]> {
@@ -94,6 +95,8 @@ export class WpService {
   getPostBuscar( wordBuscada) : Observable<any>{
      return this.http.get<WpI[]>(this.urlBurcar + wordBuscada);
    }
+
+    
 
   }
 
